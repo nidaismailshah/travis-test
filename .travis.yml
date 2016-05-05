@@ -1,0 +1,13 @@
+
+sudo: false
+language: php
+
+php:
+  - 5.6
+
+install:
+  - composer install
+  - export PATH=$PATH:$TRAVIS_BUILD_DIR/vendor/bin
+  
+script:
+  behat
